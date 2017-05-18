@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forgot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.com.zinza.zinzamessenger.activity.ForgotActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/olDrawerlayout">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/toolbar_friend_ol"
+                    />
+            </android.support.design.widget.AppBarLayout>
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <EditText
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Email..."
+                android:drawableLeft="@drawable/ic_action_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/txtForgotEmail"
+                android:layout_toStartOf="@+id/btnVerify" />
+
+            <Button
+                android:gravity="center_vertical"
+                android:id="@id/btnVerify"
+                android:background="@drawable/ic_verify"
+                android:layout_marginRight="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/txtForgotEmail"
+                android:layout_alignBottom="@+id/txtForgotEmail"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_action_password"
+            android:hint="New password"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtForgotPass" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/ic_action_password"
+            android:hint="Confirm password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtForgotConfirm" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_fb"
+            android:text="Change Password"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnChangePass" />
+
+    </LinearLayout>
+</RelativeLayout>

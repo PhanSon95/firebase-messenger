@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNameFileDl"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPathDl"
+        android:layout_below="@+id/tvNameFileDl"
+        android:text=" - Path: /storage/emulated/0/GPData/Bai2_178688.pdf"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:textStyle="normal"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSizeFileDl"
+        android:layout_below="@+id/tvPathDl"
+        android:text="- Size: 200 KB"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:textStyle="normal"
+        android:layout_marginLeft="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btnClose"
+        android:text="Close"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+        android:layout_below="@+id/tvSizeFileDl"
+        android:layout_marginTop="5dp"
+        android:background="@color/fbcolor"
+        />
+</RelativeLayout>

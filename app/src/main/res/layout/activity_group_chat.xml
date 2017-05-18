@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_group_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.com.zinza.zinzamessenger.activity.GroupChatActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/appbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_toolbar"
+            android:id="@+id/relativeLayout">
+
+            <Button
+                android:layout_marginRight="15dp"
+                android:text="Create Group"
+                android:fontFamily="cursive"
+                android:drawableLeft="@drawable/ic_create_group"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btnCreateGroup" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_take_camera"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/imgTakeCamera"
+        android:layout_below="@+id/appbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name group"
+        android:ems="10"
+        android:layout_alignTop="@+id/imgTakeCamera"
+        android:layout_toRightOf="@+id/imgTakeCamera"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/edtNamegroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+        <requestFocus/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:maxLines="2"
+        android:hint="Add memebers..."
+        android:drawableLeft="@drawable/ic_action_username"
+        android:layout_below="@+id/imgTakeCamera"
+        android:id="@+id/edtMembers" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edtMembers"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/lstUserToCreate"
+        android:layout_alignParentStart="true" />
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Describe"
+        android:ems="10"
+        android:layout_below="@+id/edtNamegroup"
+        android:layout_alignLeft="@+id/edtNamegroup"
+        android:layout_alignStart="@+id/edtNamegroup"
+        android:id="@+id/edtDescribe"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <requestFocus/>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/intro_view_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="88dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/icon_image1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/zinza_icon"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_get_avatar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/zinza_icon"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+        </FrameLayout>
+
+
+
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="26dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="30dp"
+            app:fillColor="@color/colorPrimaryDark"
+            app:pageColor="#ffffff"
+            app:radius="6dp"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="2dp" />
+        <TextView
+            android:id="@+id/start_messaging_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="33dp"
+            android:layout_marginLeft="40dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:text="skip"/>
+
+        <TextView
+            android:id="@+id/startLogin"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="33dp"
+            android:layout_marginRight="40dp"
+            android:clickable="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/start"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>

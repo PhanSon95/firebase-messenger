@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0d51b7</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#3312b6</color>
+    <color name="mainColor">#030931</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorNormal">#003380</color>
+    <color name="senderColor">#2fec21</color>
+    <color name="fbcolor">#3b5998</color>
+    <color name="fab">#F44336</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="red">#FF0000</color>
+    <color name="normal">#757575</color>
+    <color name="pressed">#3F51B5</color>
+    <color name="recipientColor">#fa7dc0</color>
+    <color name="page1">#f64c73</color>
+    <color name="page2">#20d2bb</color>
+    <color name="page3">#3395ff</color>
+    <color name="page4">#c873f4</color>
+
+    <color name="bright_pink">#FF007F</color>
+    <color name="orange">#FF7F00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#00FF00</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="azure">#007FFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="violet">#7F00FF</color>
+    <color name="magenta">#FF00FF</color>
+
+    <array name="rainbow">
+        <item>@color/bright_pink</item>
+        <item>@color/red</item>
+        <item>@color/orange</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+        <item>@color/cyan</item>
+        <item>@color/azure</item>
+        <item>@color/blue</item>
+        <item>@color/violet</item>
+        <item>@color/magenta</item>
+    </array>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chatting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="vn.com.zinza.zinzamessenger.activity.ChattingActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/appbar">
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_toolbar">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgAvatarFriend"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_avatar_df"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/txtnameFriendChatting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imgAvatarFriend"
+                    android:text="Văn Cường"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnBackChatting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_action_back" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:foregroundGravity="right"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/option"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/optionChat"/>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bordertop"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnTypeText"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_action_text" />
+
+            <Button
+                android:id="@+id/btnOpenCamera"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
+                android:background="@drawable/ic_action_camera" />
+
+            <Button
+                android:id="@+id/btnOpenGallery"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignBaseline="@+id/btnOpenCamera"
+                android:layout_alignBottom="@+id/btnOpenCamera"
+                android:layout_toEndOf="@+id/btnOpenCamera"
+                android:layout_toRightOf="@+id/btnOpenCamera"
+                android:background="@drawable/ic_action_galery" />
+
+            <ImageView
+                android:id="@+id/btnEmotion"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btnOpenGallery"
+                android:layout_toRightOf="@+id/btnOpenGallery"
+                android:src="@drawable/ic_action_emotion" />
+
+            <Button
+                android:id="@+id/btnOpenAttachment"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/btnEmotion"
+                android:layout_toRightOf="@+id/btnEmotion"
+                android:background="@drawable/ic_action_attachment" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+                android:id="@+id/edtMessageInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/btnSendMessage"
+                android:layout_toStartOf="@+id/btnSendMessage"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Type message here.."
+                android:inputType="textPersonName|textMultiLine"
+                android:maxLines="3"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnSendMessage"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_send_message" />
+        </RelativeLayout>
+    </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:id="@+id/list_content_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbar"
+            android:layout_above="@+id/linearLayout"
+            />
+</RelativeLayout>

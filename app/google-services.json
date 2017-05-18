@@ -1,0 +1,175 @@
+{
+  "project_info": {
+    "project_number": "844272390671",
+    "firebase_url": "https://zinza-4acc9.firebaseio.com",
+    "project_id": "zinza-4acc9",
+    "storage_bucket": "zinza-4acc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844272390671:android:b934d3a68a7fa980",
+        "android_client_info": {
+          "package_name": "chotot.prect.aptech.zinzamessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844272390671-mfckoib0vfhh964kb4o14uqst5vnlkbp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "chotot.prect.aptech.zinzamessenger",
+            "certificate_hash": "1a6d44d34b8e4a0061ffd3c88b99521ab3130f1c"
+          }
+        },
+        {
+          "client_id": "844272390671-af5rnvnlvnp40g04172dqt4hu94egvs8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "chotot.prect.aptech.zinzamessenger",
+            "certificate_hash": "1dc80ad3e99550e6bf0894bf474396e5d6a5be56"
+          }
+        },
+        {
+          "client_id": "844272390671-ncf735p1677i1cka8ln20vaf31rt6uo6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "chotot.prect.aptech.zinzamessenger",
+            "certificate_hash": "b477ffd77361084052c68c51170803fce9e0715a"
+          }
+        },
+        {
+          "client_id": "844272390671-fht66l9j5fiaagr7mn3vmgp01ra4m9b8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "chotot.prect.aptech.zinzamessenger",
+            "certificate_hash": "33c4b0accef27056d27b9130f2d21ac3ebc3535c"
+          }
+        },
+        {
+          "client_id": "844272390671-dtsg2rp4k07iua3a7di8mgvtqdet8mht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFS83_B7Qv1IcnAMskVJq0eqwwkwfiqjg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844272390671-dtsg2rp4k07iua3a7di8mgvtqdet8mht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844272390671:android:36b9388523beefed",
+        "android_client_info": {
+          "package_name": "zinza.com.vn.testupload"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844272390671-oqncj9s78pjldu97bmc560tr15umbism.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zinza.com.vn.testupload",
+            "certificate_hash": "1dc80ad3e99550e6bf0894bf474396e5d6a5be56"
+          }
+        },
+        {
+          "client_id": "844272390671-3bjij1ci64buche92qdagmh6kp85h0h0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zinza.com.vn.testupload",
+            "certificate_hash": "33c4b0accef27056d27b9130f2d21ac3ebc3535c"
+          }
+        },
+        {
+          "client_id": "844272390671-dtsg2rp4k07iua3a7di8mgvtqdet8mht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFS83_B7Qv1IcnAMskVJq0eqwwkwfiqjg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844272390671-dtsg2rp4k07iua3a7di8mgvtqdet8mht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844272390671:android:8a03441611987abb",
+        "android_client_info": {
+          "package_name": "vn.com.zinza.zinzamessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844272390671-mkeu0loif28phaoomc8s11lrv10e9i27.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.com.zinza.zinzamessenger",
+            "certificate_hash": "7880bd2fb13d4585ac895aac0923ef0ffe2ddb2d"
+          }
+        },
+        {
+          "client_id": "844272390671-dtsg2rp4k07iua3a7di8mgvtqdet8mht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFS83_B7Qv1IcnAMskVJq0eqwwkwfiqjg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844272390671-dtsg2rp4k07iua3a7di8mgvtqdet8mht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

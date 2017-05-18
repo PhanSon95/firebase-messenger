@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Setting"
+        android:id="@+id/action_setting"
+        android:icon="@drawable/ic_action_setting"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="History file"
+        android:id="@+id/action_history_file"
+        android:icon="@drawable/ic_file_history"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Share"
+        android:id="@+id/action_rating"
+        android:icon="@drawable/ic_action_rating"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="About us"
+        android:id="@+id/action_about"
+        android:icon="@drawable/ic_action_about"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Log out"
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_action_logout"
+        app:showAsAction="always"
+        />
+</menu>

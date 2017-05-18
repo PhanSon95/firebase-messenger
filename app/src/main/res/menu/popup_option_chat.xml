@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/changeColor"
+        android:icon="@drawable/ic_color_picker"
+        android:title="Chane color" />
+    <item
+        android:id="@+id/option2"
+        android:icon="@drawable/place_hoder"
+        android:title="Change image" />
+    <item android:id="@+id/resetColor"
+        android:title="Reset"
+        />
+</menu>

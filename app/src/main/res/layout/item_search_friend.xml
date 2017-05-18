@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/ic_avatar_df"
+        android:padding="5dp"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/imgFriendSearch"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btnAddFriend"
+        android:background="@drawable/btn_add_friend"
+        android:layout_alignBaseline="@+id/txtNameFriendSearch"
+        android:layout_alignBottom="@+id/txtNameFriendSearch"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:text="Văn Cường"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:id="@+id/txtNameFriendSearch"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgFriendSearch"
+        android:layout_toEndOf="@+id/imgFriendSearch"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

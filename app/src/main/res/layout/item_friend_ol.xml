@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_avatar_df"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/imgFriendOl"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/txtFriendOl"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/imgFriendOl"
+        android:layout_toRightOf="@+id/imgFriendOl"
+        android:layout_toEndOf="@+id/imgFriendOl" />
+
+    <ImageView
+        android:src="@drawable/online"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:id="@+id/imgStatus"
+        android:layout_alignBottom="@+id/txtFriendOl"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

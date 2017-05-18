@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:id="@+id/text_view_time_sender"
+        android:layout_below="@+id/contentMessageChat"
+        android:layout_alignRight="@+id/contentMessageChat"/>
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/contentMessageChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cmv_arrowGravity="end"
+        app:cmv_arrowMargin="3dp"
+        app:cmv_arrowPosition="right"
+        app:cmv_backgroundColor="@color/senderColor"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_contentPadding="3dp"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/ic_play_video"
+            android:id="@+id/imageView3"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/imageView3"
+            android:text="lang nghe nc mat.mp4"
+            android:singleLine="true"
+            android:id="@+id/tvNameFileVideo"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"/>
+
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+</RelativeLayout>

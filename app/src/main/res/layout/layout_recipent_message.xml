@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/contentMessageChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cmv_arrowGravity="end"
+        app:cmv_arrowMargin="3dp"
+        app:cmv_arrowPosition="left"
+        app:cmv_backgroundColor="@color/recipientColor"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_contentPadding="10dp"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="40dp">
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+        android:id="@+id/text_view_recipient_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hi. How are you?"
+        android:textStyle="bold"
+        android:textIsSelectable="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        />
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="30dp"
+        android:id="@+id/imgReciepent"
+        android:src="@drawable/ic_avatar_df"
+        android:layout_alignTop="@+id/contentMessageChat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/text_view_time_recipent"
+            android:layout_below="@+id/contentMessageChat"
+            android:layout_alignLeft="@+id/contentMessageChat"/>
+
+
+
+</RelativeLayout>
